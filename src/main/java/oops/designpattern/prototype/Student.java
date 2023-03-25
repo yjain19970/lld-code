@@ -1,4 +1,4 @@
-package prototype;
+package oops.designpattern.prototype;
 
 public class Student implements Prototype<Student> {
     int age;
@@ -8,12 +8,12 @@ public class Student implements Prototype<Student> {
 
 
 
-    public Student(Student student){
-        Student copy = new Student(this);
-        copy.age = student.age;
-        copy.name = student.name;
-        copy.batch = student.batch;
-        copy.avgBatchPsp = student.avgBatchPsp;
+    public Student() {}
+
+    public Student(Student student) {
+        this.age = student.age;
+        this.name = student.name;
+        this.batch = student.batch;
     }
 
     public int getAge() {

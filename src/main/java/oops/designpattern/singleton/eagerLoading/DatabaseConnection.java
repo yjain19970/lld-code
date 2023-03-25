@@ -1,4 +1,4 @@
-package singleton.eagerLoading;
+package oops.designpattern.singleton.eagerLoading;
 
 public class DatabaseConnection {
     private static DatabaseConnection db = new DatabaseConnection();

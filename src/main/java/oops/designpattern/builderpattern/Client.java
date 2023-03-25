@@ -1,4 +1,4 @@
-package builderpattern;
+package oops.designpattern.builderpattern;
 
 public class Client {
 

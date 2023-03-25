@@ -1,6 +1,6 @@
-package builderpattern;
+package oops.designpattern.builderpattern;
 
-public class Student {
+public class Helper {
     private String name;
     private int age;
     private double psp;
@@ -9,24 +9,10 @@ public class Student {
     private long id;
     private int gradYear;
     private String phoneNo;
-    /**
-     * we need to create object of this student
-     * 1. to create constructor, some problems. Instead we would go with
-     * 2. we would create Helper...
+    /*
+    Is there any requirement of validation these values of helper? NO
+        create getters and setters --> always use this
      */
-    Student(Helper h) {
-        if (h.getGradYear() > 2022){
-            throw new IllegalArgumentException("sds");
-        }
-
-        // validation completes.
-        this.age = h.getAge();
-        this.batchName = h.getBatchName();
-        // similrly...
-
-        System.out.println("ADD DEBUGGER");
-    }
-
 
     public String getName() {
         return name;

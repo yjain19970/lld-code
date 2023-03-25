@@ -1,14 +1,14 @@
-package singleton.doubleCheckLocking;
+package oops.designpattern.singleton.doubleCheckLocking;
 
 public class DatabaseConnection {
-    private static singleton.singleThreaded.DatabaseConnection db = null;
+    private static oops.designpattern.singleton.singleThreaded.DatabaseConnection db = null;
     private DatabaseConnection(){}
 
-    public static singleton.singleThreaded.DatabaseConnection getInstance(){
+    public static oops.designpattern.singleton.singleThreaded.DatabaseConnection getInstance(){
         if(db==null){
             synchronized (DatabaseConnection.class) {
                 if(db==null){
-                    db = new singleton.singleThreaded.DatabaseConnection();
+                    db = new oops.designpattern.singleton.singleThreaded.DatabaseConnection();
                 }
             }
         }

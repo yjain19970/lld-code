@@ -1,4 +1,4 @@
-package singleton.singleThreaded;
+package oops.designpattern.singleton.singleThreaded;
 
 public class DatabaseConnection {
     private static DatabaseConnection db = null;

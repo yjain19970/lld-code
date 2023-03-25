@@ -1,9 +1,9 @@
-package prototype;
+package oops.designpattern.prototype;
 
 public class IntelligentStudent extends Student{
     int iq;
     //potentially lead to problems
-
+    public IntelligentStudent() {}
 
 
     public IntelligentStudent(IntelligentStudent s){
