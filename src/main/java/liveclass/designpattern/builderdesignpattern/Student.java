@@ -1,4 +1,4 @@
-package liveclass.builderdesignpattern;
+package liveclass.designpattern.builderdesignpattern;
 
 public class Student {
     private String name;
