@@ -15,6 +15,7 @@ public class Client {
         Student march_23_batch = new Student();
         march_23_batch.setBatchName("march_23");
         march_23_batch.setAvgBatchPsp(87);
+
         registry.register("march_23_batch", march_23_batch);
 
         Student april_23_batch = new Student();

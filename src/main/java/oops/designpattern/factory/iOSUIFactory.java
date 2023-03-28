@@ -1,22 +1,25 @@
 package oops.designpattern.factory;
 
-import oops.designpattern.factory.component.Button;
-import oops.designpattern.factory.component.DropDown;
-import oops.designpattern.factory.component.Menu;
+import oops.designpattern.factory.component.Button.Button;
+import oops.designpattern.factory.component.Button.IOSButton;
+import oops.designpattern.factory.component.dropdown.DropDown;
+import oops.designpattern.factory.component.dropdown.IOSDropDown;
+import oops.designpattern.factory.component.menu.IOSMenu;
+import oops.designpattern.factory.component.menu.Menu;
 
 public class iOSUIFactory implements UIFactory{
     @Override
-    public Button createButton() {
-        return null;
+    public IOSButton createButton() {
+        return new IOSButton();
     }
 
     @Override
     public Menu createMenu() {
-        return null;
+        return new IOSMenu();
     }
 
     @Override
     public DropDown createDropDown() {
-        return null;
+        return new IOSDropDown();
     }
 }

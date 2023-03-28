@@ -1,22 +1,25 @@
 package oops.designpattern.factory;
 
-import oops.designpattern.factory.component.Button;
-import oops.designpattern.factory.component.DropDown;
-import oops.designpattern.factory.component.Menu;
+import oops.designpattern.factory.component.Button.AndroidButton;
+import oops.designpattern.factory.component.Button.Button;
+import oops.designpattern.factory.component.dropdown.AndroidDropDown;
+import oops.designpattern.factory.component.dropdown.DropDown;
+import oops.designpattern.factory.component.menu.AndroidMenu;
+import oops.designpattern.factory.component.menu.Menu;
 
 public class AndroidUIFactory implements UIFactory{
-    @Override
-    public Button createButton() {
-        return null;
+     @Override
+    public AndroidButton createButton() {
+        return new AndroidButton();
     }
 
     @Override
-    public Menu createMenu() {
-        return null;
+    public AndroidMenu createMenu() {
+        return new AndroidMenu();
     }
 
     @Override
     public DropDown createDropDown() {
-        return null;
+        return new AndroidDropDown();
     }
 }

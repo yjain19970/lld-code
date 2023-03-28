@@ -1,11 +1,13 @@
 package oops.designpattern.factory;
 
-import oops.designpattern.factory.component.Button;
-import oops.designpattern.factory.component.DropDown;
-import oops.designpattern.factory.component.Menu;
+import oops.designpattern.factory.component.Button.Button;
+import oops.designpattern.factory.component.dropdown.DropDown;
+import oops.designpattern.factory.component.menu.Menu;
 
+
+//abstract factory class
 public interface UIFactory {
-    public Button createButton();
-    public Menu createMenu();
-    public DropDown createDropDown();
+    Button createButton();
+    Menu createMenu();
+    DropDown createDropDown();
 }
